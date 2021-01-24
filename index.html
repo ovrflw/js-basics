@@ -5,19 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@4.0.1/reset.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 
 <body>
-    <div class="js-clock">
-        <h1>TEXT</h1>
-    </div>
-    <form class="js-form">
-        <input type="text" placeholder="What is your name?">
+    <header class="header">
+        <div class="header__search">
+            <!-- <i class="fas fa-search"></i> -->
+        </div>
+        <div class="header__weather">
+            <div class="header__weather__row">
+                <img class="header__weather__icon">
+                <span class="header__weather__temperature">7°</span>
+            </div>
+            <div class="header__weather__row">
+                <span class="header__weather__location">
+                    Uiwang
+                </span>
+            </div>
+        </div>
+    </header>
+    <div class="center-above"></div>
+    <main class="content">
+        <div class="content__clock">
+            <span class="content__clock__time">16:19</span>
+        </div>
+        <div class="content__greeting">
+            <span class="content__greeting__text">Good afternoon, name.</span>
+        </div>
+        <div class="content__todo">
+            <span class="content__todo__text">Add a todo to get started</span>
+            <form class="content__todo__form">
+                <input type="text" class="content__todo__input" maxlength='50'>
+            </form>
+        </div>
 
-    </form>
+        <div class="todo-items">
+
+        </div>
+    </main>
+
+
+    <div class="ask-name show--hidden">
+        <span class="ask-name__text">Hello, What's your name?</span>
+        <form class="ask-name__form">
+            <input type="text" class="ask-name__input">
+        </form>
+    </div>
+    <footer class="footer">
+        <span class="footer__text type--todo">Todo</span>
+    </footer>
 
     <script src="clock.js"></script>
-    <script src="gretting.js"></script>
+    <script src="greeting.js"></script>
+    <script src="todo.js"></script>
+    <script src="image.js"></script>
+    <script src="weather.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,68 @@
+
+.todo-items{
+    display: flex;
+    justify-content: space-between;
+    width: 52vw;
+    height: 22vh;
+    overflow: scroll;
+    flex-wrap: wrap;
+    background-color: rgba(65, 65, 65, 0.6);
+    padding: 5px 30px;
+    border-radius: 15px;
+}
+
+.todo-items::-webkit-scrollbar,
+.todo-item::-webkit-scrollbar {
+    display: none;
+}
+
+.todo-item{
+    font-size: 25px;
+    display: flex;
+    width: 21vw;
+    height: 44px;
+    overflow: scroll;
+    justify-content: space-between;
+    margin: 10px 0px;
+    align-items: center;
+}
+
+@media screen and (max-width: 1300px){
+    .todo-items{width: 676px;}
+    .todo-item{width: 273px;}
+}
+
+.todo-item button{
+    margin-top: 2px;
+}
+
+.todo-item__left{
+    display: flex;
+    width: 350px;
+}
+
+.todo-item__left i{
+    margin-right: 5px;
+}
+
+.todo-item__right{
+    
+}
+
+.todo-item__text{
+    word-break:break-all;
+}
+
+.delete__hidden{
+    opacity: 0;
+}
+
+.todo-item__delete{
+    padding: 6px 8.7px;
+    border: none;
+    border-radius: 50%;
+}
+
+.todo-item__delete:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}

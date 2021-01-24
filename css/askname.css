@@ -1,0 +1,17 @@
+.ask-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.ask-name__text{
+    font-size: 70px;
+    margin-bottom: 30px;
+}
+
+.ask-name__input{
+    width: 700px;
+    text-align: center;
+    font-size: 60px;
+}

@@ -1,0 +1,85 @@
+@import "css/todo.css";
+@import "css/header.css";
+@import "css/content.css";
+@import "css/askname.css";
+
+*{
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body > img{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+input, input:hover{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid;
+}
+
+button{
+    background-color: transparent;
+    color: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 95vh;
+    background-color: antiquewhite;
+    font-size: 18px;
+    animation: fadeIn 1s ease-in-out forwards;
+    margin-bottom: 30px;
+}
+
+.center-above{
+    display: flex;
+    width: 100vw;
+    height: 20vh;
+}
+
+.center-above--ask{
+    height: 30vh;
+}
+
+.footer{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 0 20px;
+    position: fixed;
+    bottom: 20px;
+}
+
+.footer span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    border: 1px solid rgba(255,255,255,1);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.footer span:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.show--hidden{
+    visibility: hidden;
+    display: none;
+    position: absolute;
+
+}

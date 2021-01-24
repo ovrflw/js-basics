@@ -1,0 +1,60 @@
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.content__clock{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.content__clock__time{
+    font-size: 200px;
+    font-weight: 500;
+}
+
+.content__greeting{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5vh;
+    font-size: 90px;
+}
+
+@media screen and (max-height: 750px){
+    .content__clock__time{font-size: 22.6667vh;}
+    .content__greeting{font-size: 8.0000vh;}
+}
+
+@media screen and (max-height: 600px){
+    .content__clock__time{font-size: 136px;}
+    .content__greeting{font-size: 48px;}
+}
+
+.content__todo{
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    align-items: center;
+}
+
+.content__todo__text{
+    margin-bottom: 15px;
+}
+
+.content__todo__input{
+    width: 473px;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
