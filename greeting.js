@@ -1,4 +1,6 @@
 const askname = document.querySelector(".ask-name"),
+    header = document.querySelector(".header"),
+    footer = document.querySelector(".footer"),
     content = document.querySelector(".content"),
     askname_form = document.querySelector(".ask-name__form"),
     askname_input = document.querySelector(".ask-name__input"),
@@ -19,12 +21,16 @@ function showAsk() {
     content.classList.add(SHOW_HIDDEN_CN);
     center_above.classList.add(CENTER_ABOVE);
     askname.classList.remove(SHOW_HIDDEN_CN);
+    header.classList.add(SHOW_HIDDEN_CN);
+    footer.classList.add(SHOW_HIDDEN_CN);
 }
 
 function showMain() {
     content.classList.remove(SHOW_HIDDEN_CN);
     center_above.classList.remove(CENTER_ABOVE);
     askname.classList.add(SHOW_HIDDEN_CN);
+    header.classList.remove(SHOW_HIDDEN_CN);
+    footer.classList.remove(SHOW_HIDDEN_CN);
 }
 
 function selectScreen() {
@@ -43,6 +49,7 @@ function handleAskSubmit(event) {
     const userName = askname_input.value;
     localStorage.setItem(USER_LS, userName);
     showMain();
+    printGreeting(userName);
 }
 
 function init() {
